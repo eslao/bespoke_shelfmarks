@@ -1,3 +1,8 @@
 #author/title
 
 =CONCAT(LOWER(REGEXEXTRACT(H2, "^[A-Za-z]{2}[aeiouy]?")), REGEXEXTRACT(SUBSTITUTE(I2, "The ", ""), "^[A-Za-z]?[bcdfghjklmnpqrstvwxz]*[aeiouy]?"))
+
+
+#forme/genre
+
+=CONCAT(SWITCH(K2, "Food/drink", "FD", "Poetry/prose", "PP", "Visual art", "VA", "Music", "MU", "Film", "FI", "Default value"), SWITCH(K1, "Food/drink", "FD", "Poetry/prose", "PP", "Visual art", "VA", "Music", "MU", "Film", "FI", "NA"))       
