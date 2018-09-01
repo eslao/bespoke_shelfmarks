@@ -1,0 +1,3 @@
+#author/title
+
+=CONCAT(LOWER(REGEXEXTRACT(H2, "^[A-Za-z]{2}[aeiouy]?")), REGEXEXTRACT(SUBSTITUTE(I2, "The ", ""), "^[A-Za-z]?[bcdfghjklmnpqrstvwxz]*[aeiouy]?"))
